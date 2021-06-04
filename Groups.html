@@ -683,6 +683,10 @@ cursor: pointer;
   color:#5c6470;
   font-family: 'Avenir Next Cyr Regular', serif;
 }
+ .b2:hover{
+  background-color: #f4f5f6;
+  border-left: 4px solid orange;
+}
 		</style>
 </head>
 <body class="Groups">
@@ -762,7 +766,9 @@ cursor: pointer;
                       else{output.innerHTML = `
                         <span class="n1">${item.title}</span>
                          <span class="n2">${item.formMaster.surname} ${item.formMaster.name} ${item.formMaster.patronymic}</span>
-                         <span class="n3">${item.students.length}</span>`;}
+                         <span class="n3">${item.students.length}</span>
+                         <img src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/93ACFCD3-76ED-4D7E-B778-192BA2F233E9.svg" style="margin-left: 10px; margin-top: 5px">`;
+                       }
 
                       document.querySelector('#box_api').appendChild(output);
                       List1.push(output);
