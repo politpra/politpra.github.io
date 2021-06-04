@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Labunets</title>
+	<link rel="stylesheet" type="text/css" href="pupil.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<style>
+	@font-face {
+font-family: 'Avenir Next Cyr Medium';
+src: url('AvenirNextCyr-Medium.eot');
+src: url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+url('AvenirNextCyr-Medium.woff') format('woff'),
+url('AvenirNextCyr-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+	.b2{
+		width: 380px;
+		height: 421px;
+	}
+	@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Playfair+Display&family=Roboto:wght@100&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Playfair+Display&family=Roboto:wght@100&display=swap');
+		body{
+			background-color: #f4f5f6;
+		}
+		*{
+      		margin: 0;
+     		padding: 0;
+    	}
+		header{
+	    width: 100%;
+        height: 52px;
+        margin: 0 0 70px;
+        padding: 10px 0px 10px 0px;
+        background-color: #40464f;
+        display: flex;
+        justify-content: flex-start;
+}
+		.logo{
+			width: 42px;
+			height: 42px;
+			margin: 9px 0 0 20px;
+			float: left;
+			
+		}
+		.header-title{
+		  	margin-top: 20px;
+		  	margin-left: 20px;
+		  	font-family: 'PlayfairDisplay', sans-serif;
+		  	color: #ffffff;
+		  	float: left;
+		}
+		.header-menu{
+			margin-left: 29%;
+			margin-top: 8px;
+		}
+		li{
+			float: left;
+			padding: 10px 45px;
+		}
+		.menu{
+			list-style-type: none;
+		}
+		.one{
+		  	margin: 0 50px 3px 0;
+		  	font-family: Avenir Next Cyr Medium, serif;
+		  	color: #e8b32e;
+		}
+		.two:hover{
+			color: #e8b32e;
+		}
+		.two{
+		  	margin: 0 50px 3px;
+		  	font-family: Avenir Next Cyr Medium, sans-serif;
+		  	color: #ffffff;
+		  	text-decoration: none;
+		}
+		.footer{
+			background-color: #40464f;
+			width: 100%;
+			height: 104px;
+			margin-top: 80px;
+		}
+		.logo-footer{
+			width: 42px;
+			height: 42px;
+			display: block;
+			margin: 0 auto 0 auto;
+			padding: 20px;
+		}
+		.title-footer{
+			margin: -10px 0 0;
+			text-align: center;
+			font-size: 10px;
+			color: #9aa2ac;
+		}
+		.back{
+			margin-bottom: 30px;
+		}
+		.pic-back{
+			float: left;
+		}
+		.name-back{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 18px;
+			font-weight: 500;
+			color: #e8b32e;
+			text-decoration: none;
+			margin-left: 10px;
+		}
+		.block{
+			width: 940px;
+			height: auto;
+			margin: 179px auto 0 auto;
+		}
+		.name{
+			width: 940px;
+			height: 130px;
+			border-radius: 5px;
+			background-color: #749bd2;
+		}
+		.title-name{
+			font-family: Ledger;
+			font-size: 25px;
+			color: #ffffff;
+			margin-left: 40px;
+			position: relative;
+			top: 40px;
+			float: left;
+		}
+		.pic-name{
+			width: 450px;
+			height: 167px;
+			position: relative;
+			top: -88px;
+			left: 0;
+			margin-left: 470px;
+		}
+		.data{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+			width: 940px;
+			height: 421px;
+		}
+		.pic-data{
+			width: 380px;
+			height: 421px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+		}
+		.text-data{
+			position: relative;
+			top: 198px;
+			text-align: center;
+			font-family: Avenir Next Cyr Medium;
+			font-size: 21px;
+			color: #40464f;
+		}
+		.right{
+			display: flex;
+			flex-direction: column;
+		}
+		.ctg{
+			width: 540px;
+			height: 127px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+		}
+		.pic-ctg{
+			margin-top: 25px;
+			margin-left: 30px;
+			float: left;
+		}
+		.title-ctg{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 18px;
+			color: #40464f;
+			margin-left: 137px;
+			margin-top: 30px;
+		}
+		.title2-ctg{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 21px;
+			color: #25282d;
+			margin-left: 137px;
+			margin-top: 20px;
+		}
+		.lead{
+			width: 540px;
+			height: 127px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+			margin-top: 20px;
+		}
+		.sub{
+			width: 540px;
+			height: 127px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+			margin-top: 20px;
+		}
+		.opus{
+			margin-top: 20px;
+			width: 940px;
+			height: 177px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+		}
+		.pic-opus{
+			float: left;
+			margin-left: 30px;
+			margin-top: 50px;
+		}
+		.title-opus{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 18px;
+			color: #40464f;
+			margin-left: 137px;
+			padding-top: 30px;
+		}
+		.title2-opus{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 21px;
+			color: #40464f;
+			margin-left: 137px;
+			margin-top: 20px;
+		}
+		.ors{
+			width: 940px;
+			height: 162px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+			margin-top: 20px;
+		}
+		.pic-ors{
+			float: left;
+			margin-left: 30px;
+			margin-top: 43px;
+		}
+		.title-ors{ 
+			font-family: Avenir Next Cyr Medium;
+			font-size: 18px;
+			color: #40464f;
+			margin-left: 137px;
+			padding-top: 30px;
+		}
+		.title2-ors{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 21px;
+			color: #40464f;
+			margin-left: 137px;
+			margin-top: 20px;
+		}
+		.title3-ors{
+			font-family: Avenir Next Cyr Medium;
+			font-size: 21px;
+			color: #40464f;
+			margin-left: 137px;
+			margin-top: 10px;
+		}
+		.data2{
+			width: 940px;
+			height: 197px;
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;
+		}
+		.grups{
+			width: 460px;
+			height: 197px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+		}
+		.pic-grups{
+			float: left;
+			margin-left: 30px;
+			margin-top: 60px;
+		}
+		.title-grups{
+			padding-top: 30px;
+			margin-left: 137px;
+			font-size: 18px;
+			color: #40464f;
+		}
+		.title2-grups{
+			margin-top: 20px;
+			margin-left: 137px;
+			font-size: 21px;
+			color: #40464f;
+		}
+		.title3-grups{
+			margin-top: 10px;
+			margin-left: 137px;
+			font-size: 21px;
+			color: #40464f;
+		}
+		.title4-grups{
+			margin-top: 10px;
+			margin-left: 137px;
+			font-size: 21px;
+			color: #40464f;
+		}
+		.achi{
+			width: 460px;
+			height: 197px;
+			border-radius: 5px;
+			box-shadow: 0 1px 2px 0 #bcc1c8;
+			background-color: #ffffff;
+			margin-left: 20px; 
+		}
+		#div6{
+	width: 30%;
+	display:flex;
+}
+.Logo {
+  width: 42px;
+  height: 42px;
+  margin:10px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+#p1{
+    width: 299px;
+  height: 24px;
+font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  display: flex;
+  padding: 10px;
+  display: block;
+  position: static;
+  margin-top: 5px;
+}
+#a3{
+  width: 70px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 25px;
+  display: block;
+  margin-top: -10px;
+
+}
+#a3:hover{
+   color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#a4{
+ width: 49px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 25px;
+  display: block;
+  margin-top: -10px;
+}
+#a4:hover{
+  color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#a5{width: 64px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 25px;
+  margin-top: -10px;
+  }
+#a5:hover{
+  color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#a6{
+    width: 78px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 25px;
+  margin-top: -10px;
+  
+}
+#a6:hover{
+  color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#div7{
+	width: 50%;
+	display:flex;
+	justify-content: space-around;
+}
+footer{
+	width: 100%;
+  height: 70px;
+  margin: 40px 0 0;
+  background-color: #40464f;
+}
+#img1{
+	width: 37px;
+  height: 37px;
+  margin: 0 154px 20px 153px;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+
+}
+.div1{
+  height: 13px;
+  text-align:center;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 10px;
+  color: #9aa2ac;
+  margin: auto;
+  margin-top: -15px;
+  text-decoration: none;
+}
+</style>
+<body>
+	<header>
+        <div id="div6">
+        	<a href="index.html">
+        	<img src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/42C07C82-6777-40B6-8A93-A8D8837C4339.png"
+     srcset="img/logo@2x.png 2x,
+             img/logo@3x.png 3x"
+     class="Logo">
+ </a>
+     <p id="p1">Довідник наукового ліцею «Політ»</p></div>
+     <div id="div7"><a href="index.html" id="a3">Головна</a>
+      <a href="Groups.html" id="a4">Групи</a>
+      <a href="Teachers.html" id="a5">Учителі</a>
+     <a href="contacts.html" id="a6">Контакти</a></div>
+ </header> 
+ 	<div id = "box_api"></div>
+
+
+	<footer>
+	  <div id="img1">
+      <a href="index.html">
+      <img style="width: 37px;
+  height: 37px;" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/42C07C82-6777-40B6-8A93-A8D8837C4339.png"
+     srcset="img/logo@2x.png 2x,
+             img/logo@3x.png 3x"
+      >
+  </a>
+   </div>
+     <div class="div1">© Веб-сайт «Довідник наукового ліцею «Політ», 2021. Усі права захищені.</div>
+ </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const ID = urlParams.get('id');
+	console.log(ID);
+	if (ID){
+	    window.addEventListener("load", async function() {
+        fetch("https://alexmarchukprod.com.ua/teacher?id="+ID)
+            .then((result) => {
+                result.json().then((item) => {
+                        const output = document.createElement("div");
+                        output.className = "b3";
+
+                        let str = `
+						<div class="block">
+							<div class="back">
+
+							<div class="name">
+								<p class="title-name">${item.surname+' '+item.name+' '+item.patronymic} </p>
+								<img class="pic-name" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/6CCFB050-3819-4EEE-8EA6-93B2B6F2D586.png">
+							</div>
+							<div class="data">
+								<div class="right">
+									<div class="ctg">
+										<img class="pic-ctg" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/E4037BDD-2401-4C5E-9370-23DFB4A263B6.svg">
+										<p class="title-ctg">Категорія</p>
+										<p class="title2-ctg">${item.rank}</p>
+									</div>
+									<div class="lead">
+										<img class="pic-ctg" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/3B201996-262E-46D7-96EF-5B1C608DEB2B.svg">
+										<p class="title-ctg">Класний керівник групи</p>
+										<p class="title2-ctg">${item.group.title}</p>
+									</div>
+									<div class="sub">
+										<img class="pic-ctg" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/D758B4F7-6582-4C4B-9937-893C6E8FB3A9.svg">
+										<p class="title-ctg">Викладає предмети</p>
+										<p class="title2-ctg">`;
+								for (let i=0;i<item.subjects.length;i++){
+									if (i) output.innerHTML+=', ';
+									str+=item.subjects[i];
+								}
+								console.log(str);
+
+								str+=`</p>
+									</div>
+								</div>	
+							</div>
+
+							<div class="data2">
+								<div class="grups">
+									<img class="pic-grups" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/E17B1373-DD65-4E48-879A-0D898E829EEC.svg">
+									<p class="title-grups" style="font-family: Avenir Next Cyr Medium;">Викладає в групах</p>`;
+							for (let i = 0;i < item.groups.length;i++){
+								str += '<p class="title2-grups" style="font-family: Avenir Next Cyr Medium;">';
+								str+=item.groups[i];
+								str+='</p>';
+								}
+								str+=`</div>
+							</div>
+						</div>
+                        `;
+                        output.innerHTML = str;
+                        document.querySelector('#box_api').appendChild(output);
+                })
+            })
+    	});
+	}
+	/*
+    window.addEventListener("load", async function() {
+        fetch("https://alexmarchukprod.com.ua/groups")
+            .then((result) => {
+                result.json().then((data) => {
+                    data.forEach((item) => {
+                      console.log(item.formMaster.photo);
+                        const output = document.createElement("div");
+                        output.className = "b3";
+                        if(item.formMaster.photo==null){
+                          output.innerHTML = `
+                          <span class="n1">${item.title}</span>
+                           <span class="n2">-</span>`;
+                        }
+                        else{output.innerHTML = `
+                           <div class="b2">${item.formMaster.photo}</div>`;}
+                        document.querySelector('#box_api').appendChild(output);
+                    })
+                })
+            })
+    });
+    */
+</script>
+</div>
+</body>
+</html>

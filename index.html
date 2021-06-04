@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тепляков-Сучков</title>
+ <!-- Шрифты -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<style>
+/*<!-- Шрифт -->*/
+@font-face {
+font-family: 'Avenir Next Cyr Medium';
+src: url('AvenirNextCyr-Medium.eot');
+src: url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+url('AvenirNextCyr-Medium.woff') format('woff'),
+url('AvenirNextCyr-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+    body{
+            background-color: #f4f5f6;
+        }    
+    * {
+    	margin: 0px;
+    	padding: 0;
+    }
+header{
+	width: 100%;
+  height: 52px;
+  margin: 0 0 70px;
+  padding: 10px 0px 10px 0px;
+  background-color: #40464f;
+  display: flex;
+  justify-content: flex-start;
+}
+.Logo {
+  width: 42px;
+  height: 42px;
+  margin:10px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+#div3{
+			width: 780px;
+  height: 100px;
+  font-family: Ledger, serif; 
+  font-size: 36px;
+  margin: 0 0 40px;
+  color: #212121;
+  margin-left: auto;
+  margin-right: auto;
+}
+#div2{
+	width: 780px;
+  height: 75px;
+  margin: 40px 0;
+  font-family: 'Avenir Next Cyr Medium';
+  font-size: 21px;
+  color: #212121;
+  margin-left: auto;
+  margin-right: auto;
+}
+#a1{
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+	width: 98px;
+  height: 42px;
+  margin: 40px 20px 40px 272px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #e8b32e;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s linear;
+  }
+  #a1:hover{
+    background-color: #b88914;
+
+  }
+  #a2{  
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  width: 117px;
+  height: 42px;
+  margin: 40px 273px 40px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #e8b32e;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s linear;
+  }
+  #a2:hover{
+    background-color:#b88914;
+}
+    
+  .Pic_main {
+  width: 492px;
+  height: 451px;
+  margin: 40px 144px 0;
+  object-fit: contain;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer{
+	width: 100%;
+  height: 70px;
+  margin: 40px 0 0;
+  background-color: #40464f;
+}
+#img1{
+	width: 37px;
+  height: 37px;
+  margin: 0 154px 20px 153px;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+
+}
+#p1{
+    width: 299px;
+  height: 24px;
+font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  display: flex;
+  padding: 10px;
+  display: block;
+  position: static;
+  margin-top: 5px;
+}
+#a3{
+
+	width: 70px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #e8b32e;
+  text-decoration: none;
+  padding-top: 25px;
+  display: block;
+  margin-top: -10px;
+  text-decoration: 3px  underline;
+
+}
+#a3:hover{
+   color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#a4{
+ width: 49px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 25px;
+  display: block;
+  margin-top: -10px;
+}
+#a4:hover{
+  color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#a5{width: 64px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 25px;
+  margin-top: -10px;
+  }
+#a5:hover{
+  color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#a6{
+    width: 78px;
+  height: 22px;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 25px;
+  margin-top: -10px;
+  
+}
+#a6:hover{
+  color: #e8b32e;
+   text-decoration: 3px underline;
+}
+#div6{
+	width: 30%;
+	display:flex;
+}
+#div7{
+	width: 50%;
+	display:flex;
+	justify-content: space-around;
+}
+span{
+  display: block;
+  text-align: center;
+}
+.div1{
+  height: 13px;
+  text-align:center;
+  font-family: 'Avenir Next Cyr Medium' ,serif;
+  font-size: 10px;
+  color: #9aa2ac;
+  margin: auto;
+  margin-top: -15px;
+  text-decoration: none;
+}
+#p2{
+	text-align: center;
+}
+#p3{
+	text-align: center;
+}
+#p4{
+	text-align: center;
+}
+#p6{
+	text-align: center;
+}
+#p5{
+	text-align: center;
+}
+	</style>
+	<header>
+        <div id="div6">
+        	<a href="index.html">
+        	<img src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/42C07C82-6777-40B6-8A93-A8D8837C4339.png"
+     srcset="img/logo@2x.png 2x,
+             img/logo@3x.png 3x"
+     class="Logo">
+ </a>
+     <p id="p1">Довідник наукового ліцею «Політ»</p></div>
+     <div id="div7"><a href="#" id="a3">Головна</a>
+      <a href="Groups.html" id="a4">Групи</a>
+      <a href="Teachers.html" id="a5">Учителі</a>
+     <a href="contacts.html" id="a6">Контакти</a></div>
+ </header> 
+ <div id="div3"> <p id="p6">Ласкаво просимо на сайт довідника </p><p id="p2">наукового ліцею «Політ»</p></div>
+  <div id="div2">
+  	<p id="p4">Шановний гостю! Даний сервіс допоможе тобі ознайомитися зі складом</p> <p id="p5">учнівських груп, інформацією про своїх одногрупників, учнів з інших груп та</p> <p id="p3">вчителів, знайти знайомих і друзів за інтересами.</p></div>
+ <span><a href="Groups.html" id="a1">ГРУПИ</a>
+  <a href="Teachers.html" id="a2">УЧИТЕЛІ</a></span>
+    <img src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/F2DCF449-A264-482C-86C5-7D16F1534F11.png"
+     srcset="pic-main@2x.png 2x,
+             pic-main@3x.png 3x"
+     class="Pic_main">
+<footer>
+    <div id="img1">
+      <a href="index.html">
+      <img style="width: 37px;
+  height: 37px;" src="https://cdn.zeplin.io/60ac3e4a3ef061930777befd/assets/42C07C82-6777-40B6-8A93-A8D8837C4339.png"
+     srcset="img/logo@2x.png 2x,
+             img/logo@3x.png 3x"
+      >
+  </a>
+   </div>
+     <div class="div1">© Веб-сайт «Довідник наукового ліцею «Політ», 2021. Усі права захищені.</div>
+ </footer>
+
+</html>
